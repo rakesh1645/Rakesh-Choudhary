@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 126" width="200" height="126" fill="none">
+  <rect width="200" height="126" rx="20" fill="url(#ytGrad)" />
+  <!-- Sparkles & Glow -->
+  <circle cx="100" cy="63" r="45" fill="rgba(255,255,255,0.15)" filter="blur(10px)" />
+  <!-- YouTube Red Badge -->
+  <rect x="55" y="38" width="90" height="50" rx="14" fill="#FF0000" />
+  <!-- Play Arrow -->
+  <polygon points="90,51 120,63 90,75" fill="#FFFFFF" />
+  <defs>
+    <linearGradient id="ytGrad" x1="0" y1="0" x2="200" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E11D48" />
+      <stop offset="0.5" stop-color="#991B1B" />
+      <stop offset="1" stop-color="#450A0A" />
+    </linearGradient>
+  </defs>
+</svg>
