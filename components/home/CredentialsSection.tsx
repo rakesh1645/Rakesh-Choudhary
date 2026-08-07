@@ -46,7 +46,7 @@ export default function CredentialsSection() {
       {/* Info Footer */}
       <div className="flex items-end justify-between z-10 mt-2">
         <div>
-          <span className="text-[11px] uppercase  tracking-[0.2em] text-white/50 group-hover:text-indigo-300 transition-colors font-medium">
+          <span className="text-xs uppercase  tracking-[0.2em] text-white/50 group-hover:text-indigo-300 transition-colors font-medium">
             CREDENTIALS
           </span>
           <h2 className="text-xl font-bold text-white/85 group-hover:text-white mt-0.5 transition-colors">
