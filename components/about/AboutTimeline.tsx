@@ -1,12 +1,12 @@
 export default function AboutTimeline() {
   const experiences = [
     {
-      period: "12/2025 - Present",
+      period: "Dec 2025 - Jul 2026",
       role: "Full Stack Engineer",
       company: "Keasbrain Technologies Pvt Ltd",
     },
     {
-      period: "06/2024 - 11/2025",
+      period: "Jun 2024 - Nov 2025",
       role: "Front-End Developer",
       company: "Aladinn Digital Solutions",
     },
@@ -15,13 +15,13 @@ export default function AboutTimeline() {
   const education = [
     {
       period: "2021 - 2024",
-      degree: "B.S. in Computer Applications (BCA)",
-      institution: "S.S. Jain Subodh P.G. College",
+      degree: "Bachelor of Computer Applications (BCA)",
+      institution: "S.S. Jain Subodh P.G. (Autonomous) College",
     },
     {
       period: "2021 | 90%",
-      degree: "High School (Class 12 - PCM)",
-      institution: "Govt. Sr. Sec. School, RBSE",
+      degree: "Senior Secondary Education (Class XII) - RBSE",
+      institution: "Govt. Senior Secondary School",
     },
   ];
 

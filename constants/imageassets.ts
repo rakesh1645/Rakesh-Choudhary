@@ -5,7 +5,7 @@ export const IMAGES = {
   bg1Texture: "/icons/bg1.avif",
   actionIcon: "/icons/icon.svg",
   youtubeThumbnail: "/icons/yt1.svg",
-  resumePdf: "/Rakesh Choudhary.pdf",
+  resumePdf: "/Rakesh Choudhary - Full Stack Developer Resume.pdf",
 } as const;
 
 export const PROFILE_IMAGE = IMAGES.profile;

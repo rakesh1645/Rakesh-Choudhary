@@ -29,12 +29,15 @@ export default function AboutHeader() {
             alt=""
             className="bg-img absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
           />
-          <div className="w-full h-full min-h-[300px] rounded-[28px] overflow-hidden border border-white/10 relative shadow-2xl group-hover:scale-[1.02] transition-transform duration-500">
+          <div className="w-full sm:w-3/4 mx-auto md:w-full aspect-[1/1.414] rounded-[28px] overflow-hidden border border-white/10 relative shadow-2xl group-hover:scale-[1.02] transition-transform duration-500">
             <Image
-              src={PROFILE_IMAGE}
+              src="/pic2.png"
               alt="Rakesh Choudhary"
-              fill
-              className="object-cover object-top"
+              width={1920}
+              height={1080}
+              priority
+              quality={100}
+              className="w-full h-full object-cover object-bottom scale-[1.1] transition-transform duration-700"
             />
           </div>
         </div>
@@ -60,13 +63,13 @@ export default function AboutHeader() {
 
             <div className="flex flex-col gap-3 relative z-10 my-auto">
               <Sparkles className="w-6 h-6 text-zinc-400 group-hover:text-pink-400/80 group-hover:rotate-12 transition-all duration-300" />
-              
+
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white/85">
                 Rakesh Choudhary
               </h2>
 
               <p className="text-zinc-300/90 text-sm sm:text-base font-normal leading-relaxed font-sans mt-1">
-                Full Stack Engineer with 2+ years of hands-on experience building scalable, production-grade web applications using React.js, Next.js, Node.js, and TypeScript across EdTech, travel, and e-commerce domains. Driven by clean code and real-world impact. Always smiling :)
+                Full Stack Developer with 2+ years of experience designing, developing, and deploying scalable web applications using React.js, Next.js, Node.js, Express.js, TypeScript, JavaScript, MongoDB, and MySQL. Proven track record constructing high-performance backend systems and tuning frontend rendering, elevating Google Lighthouse scores to 90+ and cutting page load times by 30%.
               </p>
             </div>
           </div>

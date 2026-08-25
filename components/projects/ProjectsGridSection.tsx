@@ -6,13 +6,13 @@ import { BG1_TEXTURE } from "@/constants/imageassets";
 export default function ProjectsGridSection() {
   const projects = [
     {
-      title: "Visuti Career — Career Counselling Platform",
+      title: "Visuti Career — SaaS Career Counseling Platform",
       category: "Full Stack SaaS Platform",
       company: "Keasbrain Technologies",
       description:
-        "Built a multi-panel SaaS career counselling platform managing 5+ user roles (Admin & Student portals). Implemented role-based access control (RBAC), plan-gated premium college insights (seat matrix, allotment history), and zero-incident JWT & OTP authentication.",
-      tags: ["React.js", "Next.js", "Node.js", "TypeScript", "MongoDB", "MySQL"],
-      liveUrl: "https://visuticareer.com/otp",
+        "Architected a Role-Based Access Control (RBAC) engine governing granular permissions for 5+ user roles. Implemented subscription payment workflows with Razorpay Webhooks. Secured the application utilizing HTTP-only session cookies and stateless JWT tokens.",
+      tags: ["Next.js", "Node.js", "Express.js", "MongoDB", "Razorpay", "RBAC"],
+      liveUrl: "https://visuticareer.com",
       githubUrl: "https://github.com/rakesh1645",
       featured: true,
       hoverGradient: "from-indigo-950/70 via-zinc-950 to-purple-950/70",
@@ -20,13 +20,13 @@ export default function ProjectsGridSection() {
       tagBorder: "border-indigo-500/20 text-indigo-400 bg-indigo-950/60",
     },
     {
-      title: "Stop Delay — Flight Compensation Platform",
-      category: "Operations & Flight Claims SaaS",
+      title: "Muzspot — Hyperlocal Business Discovery Web App",
+      category: "Web Application",
       company: "Aladinn Digital Solutions",
       description:
-        "Built an intuitive flight compensation claim experience using React.js. Integrated third-party flight data APIs, designed a multi-step claim submission form with client-side validation, and built animated hero visuals setting a reassuring tone.",
-      tags: ["React.js", "Express.js", "REST APIs", "Node.js", "MongoDB"],
-      liveUrl: "#",
+        "Designed multi-tenant portal infrastructure with isolated JWT authentication supporting 2 distinct user roles. Engineered client-side search debouncing and caching mechanisms, slashing redundant API network requests by 50%. Streamlined media delivery via video lazy loading.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "REST APIs"],
+      liveUrl: "https://muzspot.com",
       githubUrl: "https://github.com/rakesh1645",
       featured: false,
       hoverGradient: "from-purple-950/70 via-zinc-950 to-pink-950/70",
@@ -38,9 +38,9 @@ export default function ProjectsGridSection() {
       category: "Enterprise E-Commerce SaaS",
       company: "E-Commerce Project",
       description:
-        "Built product listing, cart, and checkout flows for an online jewelry store with smooth payment experiences. Implemented responsive UI, structured data SEO optimization, and fine-grained filterable product catalogs (category, metal, price range).",
-      tags: ["Next.js", "TypeScript", "Node.js", "MySQL", "Tailwind CSS"],
-      liveUrl: "https://www.jkjjewellers.in/",
+        "Shipped an end-to-end luxury e-commerce experience with dynamic multi-attribute product filtering and integrated payment checkout. Optimized Core Web Vitals (LCP/FCP) through Next.js responsive image formats. Structured comprehensive product schemas (JSON-LD).",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "REST APIs"],
+      liveUrl: "https://jkjjewellers.in",
       githubUrl: "https://github.com/rakesh1645",
       featured: true,
       hoverGradient: "from-amber-950/70 via-zinc-950 to-rose-950/70",

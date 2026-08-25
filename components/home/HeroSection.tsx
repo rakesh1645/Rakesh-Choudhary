@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ActionButton from "../common/ActionButton";
 import { PROFILE_IMAGE, BG1_TEXTURE } from "@/constants/imageassets";
 
@@ -18,16 +19,21 @@ export default function HeroSection() {
       <Link href="/about" className="overlay-link" aria-label="About Rakesh Choudhary" />
 
       {/* Profile Photo Container */}
-      <div className="w-full md:w-5/12 h-48 sm:h-52 md:h-56 rounded-[24px] overflow-hidden relative z-10 border border-white/10 group-hover:border-indigo-400/30 shadow-xl flex-shrink-0 group-hover:scale-[1.02] transition-all duration-500">
-        <img
-          src={PROFILE_IMAGE}
+      <div className="w-full md:w-1/2 aspect-[1/1] rounded-[24px] overflow-hidden relative z-10 border border-white/10 shadow-xl flex-shrink-0 transition-all duration-500 mx-auto md:mx-0">
+        <Image
+          src="/pic1.png"
           alt="Rakesh Choudhary"
+          width={1920}
+          height={1080}
+          priority
+          quality={100}
+
           className="w-full h-full object-cover object-center"
         />
       </div>
 
       {/* Profile Info Details Container */}
-      <div className="w-full md:w-7/12 flex flex-col justify-between h-full z-10 py-1 my-auto">
+      <div className="w-full md:w-1/2 flex flex-col justify-between h-full z-10 py-1 my-auto">
         <div className="flex flex-col gap-2 my-auto">
           <span className="text-[11px] tracking-[0.2em] text-indigo-300/80 font-normal">
             Full Stack Engineer

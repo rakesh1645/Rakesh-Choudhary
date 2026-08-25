@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import Image from "next/image";
 import { Mail, MapPin, Phone, Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { GithubIcon, LinkedinIcon, YoutubeIcon } from "@/components/common/Icons";
 
@@ -66,17 +67,25 @@ export default function ContactFormSection() {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full">
       {/* Contact Information Cards */}
       <div className="lg:col-span-5 flex flex-col gap-6">
-        <div className="shadow-box p-8 flex flex-col justify-between h-full">
-          <div>
-            <span className="text-xs font-mono tracking-widest text-indigo-400 font-medium">
-              Contact Details
-            </span>
-            <h1 className="text-3xl font-bold text-white/85 tracking-tight mt-1">
-              Let's build something scalable together.
-            </h1>
-            <p className="text-sm text-zinc-400 mt-3 leading-relaxed">
-              Open to full-time engineering roles, freelance opportunities, or technical project collaborations.
-            </p>
+        <div className="shadow-box p-8 flex flex-col justify-between h-full relative overflow-hidden group">
+          {/* Banner Image */}
+          <div className="-mx-8 -mt-8 mb-6 relative overflow-hidden aspect-[1/1.414] max-h-[400px]">
+            <Image src="/pic4.png" alt="Rakesh Choudhary" width={1920} height={1080} priority quality={100} className="w-full h-full object-cover object-top scale-[1.41] transition-transform duration-700" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-[#0f0f0f]/30 to-transparent" />
+          </div>
+
+          <div className="relative z-10 flex flex-col gap-4">
+            <div>
+              <span className="text-xs font-mono tracking-widest text-indigo-400 font-medium">
+                Contact Details
+              </span>
+              <h1 className="text-3xl font-bold text-white/85 tracking-tight mt-1">
+                Let's build something scalable together.
+              </h1>
+              <p className="text-sm text-zinc-400 mt-3 leading-relaxed">
+                Open to full-time engineering roles, freelance opportunities, or technical project collaborations.
+              </p>
+            </div>
           </div>
 
           <div className="mt-8 space-y-4">
@@ -165,7 +174,6 @@ export default function ContactFormSection() {
         <div className="shadow-box p-8">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-white/85">Send a Message</h2>
-            <span className="text-xs font-mono text-zinc-500 tracking-wider">Formik + Nodemailer API</span>
           </div>
 
           {submitted && (
@@ -199,11 +207,10 @@ export default function ContactFormSection() {
                   onBlur={formik.handleBlur}
                   value={formik.values.name}
                   placeholder="e.g. John Doe"
-                  className={`w-full px-4 py-3 rounded-xl bg-zinc-900/90 border text-white/85 placeholder-zinc-600 focus:outline-none text-sm transition-colors ${
-                    formik.touched.name && formik.errors.name
-                      ? "border-rose-500/80 focus:border-rose-500"
-                      : "border-white/10 focus:border-white/30"
-                  }`}
+                  className={`w-full px-4 py-3 rounded-xl bg-zinc-900/90 border text-white/85 placeholder-zinc-600 focus:outline-none text-sm transition-colors ${formik.touched.name && formik.errors.name
+                    ? "border-rose-500/80 focus:border-rose-500"
+                    : "border-white/10 focus:border-white/30"
+                    }`}
                 />
                 {formik.touched.name && formik.errors.name && (
                   <div className="flex items-center gap-1.5 text-xs text-rose-400 mt-1.5">
@@ -226,11 +233,10 @@ export default function ContactFormSection() {
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
                   placeholder="john@example.com"
-                  className={`w-full px-4 py-3 rounded-xl bg-zinc-900/90 border text-white/85 placeholder-zinc-600 focus:outline-none text-sm transition-colors ${
-                    formik.touched.email && formik.errors.email
-                      ? "border-rose-500/80 focus:border-rose-500"
-                      : "border-white/10 focus:border-white/30"
-                  }`}
+                  className={`w-full px-4 py-3 rounded-xl bg-zinc-900/90 border text-white/85 placeholder-zinc-600 focus:outline-none text-sm transition-colors ${formik.touched.email && formik.errors.email
+                    ? "border-rose-500/80 focus:border-rose-500"
+                    : "border-white/10 focus:border-white/30"
+                    }`}
                 />
                 {formik.touched.email && formik.errors.email && (
                   <div className="flex items-center gap-1.5 text-xs text-rose-400 mt-1.5">
@@ -254,11 +260,10 @@ export default function ContactFormSection() {
                 onBlur={formik.handleBlur}
                 value={formik.values.subject}
                 placeholder="Full Stack Opportunity / Project Collaboration"
-                className={`w-full px-4 py-3 rounded-xl bg-zinc-900/90 border text-white/85 placeholder-zinc-600 focus:outline-none text-sm transition-colors ${
-                  formik.touched.subject && formik.errors.subject
-                    ? "border-rose-500/80 focus:border-rose-500"
-                    : "border-white/10 focus:border-white/30"
-                }`}
+                className={`w-full px-4 py-3 rounded-xl bg-zinc-900/90 border text-white/85 placeholder-zinc-600 focus:outline-none text-sm transition-colors ${formik.touched.subject && formik.errors.subject
+                  ? "border-rose-500/80 focus:border-rose-500"
+                  : "border-white/10 focus:border-white/30"
+                  }`}
               />
               {formik.touched.subject && formik.errors.subject && (
                 <div className="flex items-center gap-1.5 text-xs text-rose-400 mt-1.5">
@@ -281,11 +286,10 @@ export default function ContactFormSection() {
                 onBlur={formik.handleBlur}
                 value={formik.values.message}
                 placeholder="Tell me about your project or role requirements..."
-                className={`w-full px-4 py-3 rounded-xl bg-zinc-900/90 border text-white/85 placeholder-zinc-600 focus:outline-none text-sm transition-colors resize-none ${
-                  formik.touched.message && formik.errors.message
-                    ? "border-rose-500/80 focus:border-rose-500"
-                    : "border-white/10 focus:border-white/30"
-                }`}
+                className={`w-full px-4 py-3 rounded-xl bg-zinc-900/90 border text-white/85 placeholder-zinc-600 focus:outline-none text-sm transition-colors resize-none ${formik.touched.message && formik.errors.message
+                  ? "border-rose-500/80 focus:border-rose-500"
+                  : "border-white/10 focus:border-white/30"
+                  }`}
               />
               {formik.touched.message && formik.errors.message && (
                 <div className="flex items-center gap-1.5 text-xs text-rose-400 mt-1.5">
