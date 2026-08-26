@@ -1,29 +1,46 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Sparkles } from "lucide-react";
+import Magnetic from "../common/Magnetic";
+import { motion } from "framer-motion";
 import { PROFILE_IMAGE, BG1_TEXTURE } from "@/constants/imageassets";
 
 export default function AboutHeader() {
   return (
     <div className="flex flex-col gap-6 w-full">
       {/* Navigation Header */}
-      <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors bg-zinc-900/60 border border-white/10 px-4 py-2 rounded-full"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Back to Home</span>
-        </Link>
+      <motion.div 
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="flex items-center justify-between"
+      >
+        <Magnetic strength={0.2}>
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors bg-zinc-900/60 border border-white/10 px-4 py-2 rounded-full interactive"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span>Back to Home</span>
+          </Link>
+        </Magnetic>
         <span className="text-xs tracking-widest text-zinc-500 font-normal">
           Credentials & Summary
         </span>
-      </div>
+      </motion.div>
 
       {/* Top Bento Row */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
         {/* Left Column: Square Photo Card */}
-        <div className="md:col-span-5 shadow-box p-6 flex items-center justify-center relative group min-h-[360px]">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="md:col-span-5 shadow-box p-6 flex items-center justify-center relative group min-h-[360px]"
+        >
           <img
             src={BG1_TEXTURE}
             alt=""
@@ -40,10 +57,16 @@ export default function AboutHeader() {
               className="w-full h-full object-cover object-bottom scale-[1.1] transition-transform duration-700"
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Column: ✴ Self-Summary ✴ + Bio Box Card */}
-        <div className="md:col-span-7 flex flex-col justify-between gap-4">
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="md:col-span-7 flex flex-col justify-between gap-4"
+        >
           {/* Title with Starburst Icons on BOTH SIDES in Light Font Weight */}
           <div className="flex items-center justify-center gap-3 select-none py-1">
             <span className="text-3xl sm:text-4xl text-zinc-400 font-light">✴</span>
@@ -73,7 +96,7 @@ export default function AboutHeader() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

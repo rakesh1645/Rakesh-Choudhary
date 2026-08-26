@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import CursorBackground from "@/components/common/CursorBackground";
+import CustomCursor from "@/components/common/CustomCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,6 +54,9 @@ export default function RootLayout({
       <body className="bg-[#0f0f0f] text-zinc-100 min-h-screen flex flex-col antialiased font-sans">
         {/* Interactive Grid & Colorful Particle Cursor Ring Canvas */}
         <CursorBackground />
+        
+        {/* Custom Premium Cursor */}
+        <CustomCursor />
 
         {/* Content Wrapper */}
         <div className="relative z-10 flex flex-col min-h-screen">
