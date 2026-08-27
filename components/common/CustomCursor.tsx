@@ -10,7 +10,15 @@ export default function CustomCursor() {
 
   useEffect(() => {
     // Only show custom cursor on desktop
-    const checkIsDesktop = () => setIsDesktop(window.innerWidth > 768);
+    const checkIsDesktop = () => {
+      const desktop = window.innerWidth > 768;
+      setIsDesktop(desktop);
+      if (desktop) {
+        document.body.style.cursor = "none";
+      } else {
+        document.body.style.cursor = "auto";
+      }
+    };
     checkIsDesktop();
     window.addEventListener("resize", checkIsDesktop);
 
@@ -37,9 +45,6 @@ export default function CustomCursor() {
 
     window.addEventListener("mousemove", updateMousePosition);
     window.addEventListener("mouseover", handleMouseOver);
-
-    // Hide default cursor globally
-    document.body.style.cursor = "none";
 
     return () => {
       window.removeEventListener("resize", checkIsDesktop);

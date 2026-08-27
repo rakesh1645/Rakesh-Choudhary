@@ -21,7 +21,7 @@ export default function ProjectsSection() {
 
       {/* Giant Subtle Background Text "PROJECTS" */}
       <div className="absolute top-6 left-1/2 -translate-x-1/2 pointer-events-none select-none z-0">
-        <span className="text-4xl sm:text-5xl font-extrabold font-mono uppercase tracking-[0.25em] text-slate-700/30 group-hover:text-amber-500/20 transition-colors duration-500">
+        <span className="text-3xl min-[400px]:text-4xl sm:text-5xl font-extrabold font-mono uppercase tracking-[0.15em] sm:tracking-[0.25em] text-slate-700/30 group-hover:text-amber-500/20 transition-colors duration-500 whitespace-nowrap">
           PROJECTS
         </span>
       </div>
@@ -47,19 +47,19 @@ export default function ProjectsSection() {
           </div>
 
           {/* Laptop Screen Content */}
-          <div className="p-4 bg-gradient-to-br from-slate-900 via-zinc-950 to-slate-900 flex flex-col items-center justify-center text-center min-h-[115px] relative">
+          <div className="p-3 sm:p-4 bg-gradient-to-br from-slate-900 via-zinc-950 to-slate-900 flex flex-col items-center justify-center text-center min-h-[115px] relative">
             <div className="flex items-center gap-1.5 mb-1">
               <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
               <span className="text-[9px] font-mono tracking-widest text-amber-400 uppercase font-bold">
-                VISUTI & JKJ PLATFORMS
+                SAAS & WEB PLATFORMS
               </span>
             </div>
             <h3 className="text-xs font-bold text-white/90 tracking-tight group-hover:text-amber-300 transition-colors">
-              FULL STACK SAAS & E-COMMERCE
+              VISUTI, ROODRAKSH, ALADINN & JKJ
             </h3>
 
             {/* Micro Tech Tags */}
-            <div className="flex items-center gap-1.5 mt-2">
+            <div className="flex items-center gap-1.5 mt-2 flex-wrap justify-center">
               <span className="text-[8px] font-mono text-zinc-400 bg-slate-800/80 border border-slate-700/60 px-1.5 py-0.5 rounded">
                 React
               </span>
@@ -77,10 +77,10 @@ export default function ProjectsSection() {
       {/* Info Footer */}
       <div className="flex items-end justify-between z-10 mt-1">
         <div>
-          <span className="text-[11px] uppercase font-mono tracking-[0.2em] text-slate-400 group-hover:text-amber-400 transition-colors font-medium">
+          <span className="text-[10px] sm:text-[11px] uppercase font-mono tracking-[0.2em] text-slate-400 group-hover:text-amber-400 transition-colors font-medium">
             SHOWCASE
           </span>
-          <h2 className="text-2xl font-bold text-white/90 mt-0.5 group-hover:text-white transition-colors">
+          <h2 className="text-xl sm:text-2xl font-bold text-white/90 mt-0.5 group-hover:text-white transition-colors">
             Projects
           </h2>
         </div>

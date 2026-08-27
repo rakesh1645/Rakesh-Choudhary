@@ -22,10 +22,10 @@ export default function ProjectsCard() {
           </div>
           <div className="flex-1 p-3 bg-gradient-to-br from-sky-950/40 via-zinc-950 to-indigo-950/40 flex flex-col items-center justify-center text-center">
             <span className="text-[9px] font-mono tracking-widest text-sky-400 uppercase font-bold">
-              VISUTI & JKJ PLATFORMS
+              SAAS & WEB PLATFORMS
             </span>
             <span className="text-xs font-extrabold text-white mt-0.5 tracking-tight">
-              FULL STACK SAAS & E-COMMERCE
+              VISUTI, ROODRAKSH, ALADINN & JKJ
             </span>
           </div>
         </div>

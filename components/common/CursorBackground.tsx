@@ -28,6 +28,13 @@ export default function CursorBackground() {
       mouse.targetY = e.clientY;
     };
 
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        mouse.targetX = e.touches[0].clientX;
+        mouse.targetY = e.touches[0].clientY;
+      }
+    };
+
     const handleResize = () => {
       if (!canvas) return;
       width = canvas.width = window.innerWidth;
@@ -35,6 +42,7 @@ export default function CursorBackground() {
     };
 
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
     window.addEventListener("resize", handleResize);
 
     // Full-screen colorful micro-dots streaming upwards

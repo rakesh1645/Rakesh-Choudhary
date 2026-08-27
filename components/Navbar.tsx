@@ -18,27 +18,27 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full py-8 px-4 sm:px-8 max-w-6xl mx-auto z-50 relative">
-      <div className="flex items-center justify-between">
+    <header className="w-full py-4 sm:py-6 md:py-8 px-4 sm:px-8 max-w-6xl mx-auto z-50 relative">
+      <div className="flex items-center justify-between gap-3 sm:gap-6">
         {/* Dotted Logo Style */}
         <Link 
           href="/" 
-          className="text-2xl sm:text-3xl tracking-[0.18em] font-light text-zinc-300 hover:text-white transition-colors font-mono uppercase"
-          style={{ letterSpacing: "0.15em", textShadow: "0 0 10px rgba(255,255,255,0.1)" }}
+          className="text-lg sm:text-2xl md:text-3xl tracking-[0.12em] sm:tracking-[0.18em] font-light text-zinc-300 hover:text-white transition-colors font-mono uppercase whitespace-nowrap"
+          style={{ textShadow: "0 0 10px rgba(255,255,255,0.1)" }}
         >
           HELLO INDIA!
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
-          <ul className="flex items-center gap-10">
+          <ul className="flex items-center gap-6 lg:gap-10">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className={`text-base font-normal transition-colors ${
+                    className={`text-sm sm:text-base font-normal transition-colors ${
                       isActive
                         ? "text-white font-medium"
                         : "text-zinc-500 hover:text-zinc-300"
@@ -58,7 +58,7 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/rakesh-choudhary-122146266/"
             target="_blank"
             rel="noopener noreferrer"
-            className="linkedin-btn-glass"
+            className="linkedin-btn-glass text-xs sm:text-sm"
           >
             <LinkedinIcon className="w-4 h-4 text-sky-400" />
             <span>Let's Connect!</span>
@@ -69,9 +69,9 @@ export default function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation menu"
-          className="md:hidden p-2 rounded-xl bg-zinc-900/80 border border-white/10 text-zinc-300 hover:text-white"
+          className="md:hidden p-2 sm:p-2.5 rounded-xl bg-zinc-900/80 border border-white/10 text-zinc-300 hover:text-white flex-shrink-0"
         >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
         </button>
       </div>
 

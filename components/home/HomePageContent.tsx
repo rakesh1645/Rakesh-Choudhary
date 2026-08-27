@@ -10,15 +10,15 @@ import CTASection from "./CTASection";
 
 export default function HomePageContent() {
   return (
-    <div className="flex flex-col gap-8 md:gap-10 w-full py-4">
+    <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 w-full py-2 sm:py-4">
       {/* Top Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-stretch">
         <div className="lg:col-span-6 flex">
           <HeroSection />
         </div>
         <div className="lg:col-span-6 flex flex-col gap-6 justify-between">
           <MarqueeSection />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 flex-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 flex-1">
             <CredentialsSection />
             <ProjectsSection />
           </div>
@@ -26,7 +26,7 @@ export default function HomePageContent() {
       </div>
 
       {/* Middle Section */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-stretch">
         <div className="md:col-span-3 flex">
           <YouTubeSection />
         </div>
@@ -39,7 +39,7 @@ export default function HomePageContent() {
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-stretch">
         <div className="lg:col-span-6 flex">
           <StatsSection />
         </div>

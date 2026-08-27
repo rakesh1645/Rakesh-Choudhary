@@ -30,10 +30,10 @@ export default function MagicSection() {
       />
 
       {/* Crazy RGB Split Cyberpunk Glitch Typography on Hover */}
-      <div className="relative z-10 text-center select-none py-6 w-full pointer-events-none">
+      <div className="relative z-10 text-center select-none py-4 sm:py-6 w-full pointer-events-none">
         <h2 
-          className={`text-5xl sm:text-6xl md:text-7xl font-black tracking-[0.2em] text-transparent leading-tight transition-all duration-300 ${
-            isHovered ? "scale-110 animate-[crazy-glitch_0.3s_infinite_linear]" : ""
+          className={`text-3xl min-[380px]:text-4xl sm:text-6xl md:text-7xl font-black tracking-[0.12em] sm:tracking-[0.2em] text-transparent leading-tight transition-all duration-300 ${
+            isHovered ? "scale-105 sm:scale-110 animate-[crazy-glitch_0.3s_infinite_linear]" : ""
           }`}
           style={{
             WebkitTextStroke: isHovered ? "2.2px #ff007f" : "1.8px #ff007f",
@@ -46,8 +46,8 @@ export default function MagicSection() {
         </h2>
 
         <h2 
-          className={`text-5xl sm:text-6xl md:text-7xl font-black tracking-[0.2em] text-transparent mt-3 leading-tight transition-all duration-300 ${
-            isHovered ? "scale-110 animate-[crazy-glitch_0.25s_infinite_linear_reverse]" : ""
+          className={`text-3xl min-[380px]:text-4xl sm:text-6xl md:text-7xl font-black tracking-[0.12em] sm:tracking-[0.2em] text-transparent mt-2 sm:mt-3 leading-tight transition-all duration-300 ${
+            isHovered ? "scale-105 sm:scale-110 animate-[crazy-glitch_0.25s_infinite_linear_reverse]" : ""
           }`}
           style={{
             WebkitTextStroke: isHovered ? "2.2px #00f0ff" : "1.8px #ff007f",

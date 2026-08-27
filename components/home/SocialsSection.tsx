@@ -22,7 +22,7 @@ export default function SocialsSection() {
       />
 
       {/* Social Profiles Interactive Cards */}
-      <div className="w-full rounded-[24px] bg-zinc-900/60 border border-white/5 p-4 flex items-center justify-around group-hover:border-sky-500/30 group-hover:bg-zinc-900/80 transition-all duration-500 relative z-10">
+      <div className="w-full rounded-[24px] bg-zinc-900/60 border border-white/5 p-3 sm:p-4 flex items-center justify-around group-hover:border-sky-500/30 group-hover:bg-zinc-900/80 transition-all duration-500 relative z-10">
         <a
           href="https://www.linkedin.com/in/rakesh-choudhary-122146266/"
           target="_blank"
@@ -30,8 +30,8 @@ export default function SocialsSection() {
           className="flex flex-col items-center gap-1.5 group/icon"
           aria-label="LinkedIn Profile"
         >
-          <div className="w-16 h-16 rounded-full bg-zinc-800/80 border border-white/10 flex items-center justify-center text-zinc-300 group-hover/icon:text-sky-400 group-hover/icon:border-sky-400/80 group-hover/icon:bg-sky-950/60 group-hover/icon:scale-110 group-hover/icon:shadow-[0_0_20px_rgba(56,189,248,0.6)] transition-all duration-300">
-            <LinkedinIcon className="w-8 h-8" />
+          <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-zinc-800/80 border border-white/10 flex items-center justify-center text-zinc-300 group-hover/icon:text-sky-400 group-hover/icon:border-sky-400/80 group-hover/icon:bg-sky-950/60 group-hover/icon:scale-110 group-hover/icon:shadow-[0_0_20px_rgba(56,189,248,0.6)] transition-all duration-300">
+            <LinkedinIcon className="w-5 h-5 sm:w-8 sm:h-8" />
           </div>
         </a>
 
@@ -42,8 +42,8 @@ export default function SocialsSection() {
           className="flex flex-col items-center gap-1.5 group/icon"
           aria-label="GitHub Profile"
         >
-          <div className="w-16 h-16 rounded-full bg-zinc-800/80 border border-white/10 flex items-center justify-center text-zinc-300 group-hover/icon:text-white group-hover/icon:border-white/80 group-hover/icon:bg-zinc-800 group-hover/icon:scale-110 group-hover/icon:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all duration-300">
-            <GithubIcon className="w-8 h-8" />
+          <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-zinc-800/80 border border-white/10 flex items-center justify-center text-zinc-300 group-hover/icon:text-white group-hover/icon:border-white/80 group-hover/icon:bg-zinc-800 group-hover/icon:scale-110 group-hover/icon:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all duration-300">
+            <GithubIcon className="w-5 h-5 sm:w-8 sm:h-8" />
           </div>
         </a>
 
@@ -54,8 +54,8 @@ export default function SocialsSection() {
           className="flex flex-col items-center gap-1.5 group/icon"
           aria-label="YouTube Channel"
         >
-          <div className="w-16 h-16 rounded-full bg-zinc-800/80 border border-white/10 flex items-center justify-center text-zinc-300 group-hover/icon:text-red-400 group-hover/icon:border-red-400/80 group-hover/icon:bg-red-950/60 group-hover/icon:scale-110 group-hover/icon:shadow-[0_0_20px_rgba(239,68,68,0.6)] transition-all duration-300">
-            <YoutubeIcon className="w-8 h-8" />
+          <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-zinc-800/80 border border-white/10 flex items-center justify-center text-zinc-300 group-hover/icon:text-red-400 group-hover/icon:border-red-400/80 group-hover/icon:bg-red-950/60 group-hover/icon:scale-110 group-hover/icon:shadow-[0_0_20px_rgba(239,68,68,0.6)] transition-all duration-300">
+            <YoutubeIcon className="w-5 h-5 sm:w-8 sm:h-8" />
           </div>
         </a>
       </div>
