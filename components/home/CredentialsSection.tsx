@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ActionButton from "../common/ActionButton";
 import { BG1_TEXTURE } from "@/constants/imageassets";
 
@@ -27,26 +28,24 @@ export default function CredentialsSection() {
         aria-label="Go to About Me & Credentials page"
       />
 
-      {/* Elegant Cursive Signature Visual */}
-      <div className="w-full flex-1 flex items-center justify-center my-2 relative z-10">
-        <svg
-          viewBox="0 0 300 120"
-          className="w-full max-w-[220px] h-auto text-white/80 group-hover:text-indigo-200 group-hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(99,102,241,0.4)]"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M20,70 Q40,20 60,60 T100,50 T140,80 T180,40 T220,65 Q250,55 280,60" />
-          <path d="M30,85 Q130,80 270,82" strokeWidth="1.2" />
-        </svg>
+      {/* Handwritten Signature Visual from public/singnature.png */}
+      <div className="w-full flex-1 flex items-center justify-center my-2 relative z-10 py-2">
+        <div className="relative w-full max-w-[200px] h-[75px] sm:h-[85px] flex items-center justify-center">
+          <Image
+            src="/singnature.png"
+            alt="Rakesh Choudhary Signature"
+            fill
+            sizes="(max-width: 768px) 180px, 220px"
+            className="object-contain invert grayscale brightness-200 contrast-125 mix-blend-screen group-hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(99,102,241,0.5)]"
+            priority
+          />
+        </div>
       </div>
 
       {/* Info Footer */}
       <div className="flex items-end justify-between z-10 mt-2">
         <div>
-          <span className="text-xs uppercase  tracking-[0.2em] text-white/50 group-hover:text-indigo-300 transition-colors font-medium">
+          <span className="text-xs uppercase tracking-[0.2em] text-white/50 group-hover:text-indigo-300 transition-colors font-medium">
             CREDENTIALS
           </span>
           <h2 className="text-xl font-bold text-white/85 group-hover:text-white mt-0.5 transition-colors">
