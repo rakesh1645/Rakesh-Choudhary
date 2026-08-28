@@ -13,19 +13,19 @@ export default function CredentialsCard() {
 
       <Link href="/about" className="overlay-link" aria-label="Go to About page" />
 
-      {/* Signature Photo Visual */}
-      <div className="w-full h-36 rounded-2xl border border-white/5 flex items-center justify-center relative overflow-hidden group-hover:border-white/15 transition-colors z-10 p-4">
-        <div className="relative w-full h-full">
-          <Image
-            src="/singnature.png"
-            alt="Rakesh Choudhary Signature"
-            className="object-cover"
-          />
-        </div>
+      {/* Signature Photo Visual - Full Width & Original White Color */}
+      <div className="w-full flex-1 min-h-[140px] sm:min-h-[160px] rounded-2xl overflow-hidden border border-white/10 relative z-10 shadow-lg group-hover:border-white/20 transition-all duration-500 my-2">
+        <Image
+          src="/singnature.png"
+          alt="Rakesh Choudhary Signature"
+          fill
+          className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          priority
+        />
       </div>
 
       {/* Info Footer */}
-      <div className="flex items-end justify-between mt-6 z-10">
+      <div className="flex items-end justify-between mt-4 z-10">
         <div>
           <span className="text-[11px] uppercase font-mono tracking-[0.2em] text-zinc-500 font-medium">
             CREDENTIALS

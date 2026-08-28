@@ -28,18 +28,16 @@ export default function CredentialsSection() {
         aria-label="Go to About Me & Credentials page"
       />
 
-      {/* Handwritten Signature Visual from public/singnature.png */}
-      <div className="w-full flex-1 flex items-center justify-center my-2 relative z-10 py-2">
-        <div className="relative w-full max-w-[200px] h-[75px] sm:h-[85px] flex items-center justify-center">
-          <Image
-            src="/singnature.png"
-            alt="Rakesh Choudhary Signature"
-            fill
-            sizes="(max-width: 768px) 180px, 220px"
-            className="object-contain invert grayscale brightness-200 contrast-125 mix-blend-screen group-hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(99,102,241,0.5)]"
-            priority
-          />
-        </div>
+      {/* Signature Photo Visual - Full Width & Original White Color */}
+      <div className="w-full flex-1 min-h-[140px] sm:min-h-[160px] rounded-2xl overflow-hidden border border-white/10 relative z-10 shadow-lg group-hover:border-white/20 transition-all duration-500 my-2">
+        <Image
+          src="/singnature.png"
+          alt="Rakesh Choudhary Signature"
+          fill
+          className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          sizes="(max-width: 768px) 100vw, 400px"
+          priority
+        />
       </div>
 
       {/* Info Footer */}
