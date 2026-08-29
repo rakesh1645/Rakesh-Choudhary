@@ -69,7 +69,7 @@ export default function AboutHeader() {
           <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/30 via-transparent to-purple-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
           {/* Photo Frame */}
-          <div className="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-none aspect-[1/1.2] sm:aspect-[1/1.3] rounded-[24px] sm:rounded-[28px] overflow-hidden border border-white/10 relative shadow-2xl group-hover:scale-[1.02] group-hover:border-indigo-400/40 transition-all duration-500">
+          <div className="w-full max-w-[320px] sm:max-w-[360px] lg:max-w-none aspect-[1/1.2] sm:aspect-[1/1.3] rounded-[24px] sm:rounded-[28px] overflow-hidden border border-white/10 relative shadow-2xl group-hover:scale-[1.02] group-hover:border-indigo-400/40 transition-all duration-500">
             <Image
               src="/pic2.png"
               alt="Rakesh Choudhary"

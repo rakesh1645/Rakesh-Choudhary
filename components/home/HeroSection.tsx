@@ -32,7 +32,7 @@ export default function HeroSection() {
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.7 }}
-        className="w-full max-w-[220px] sm:max-w-[260px] md:max-w-none md:w-1/2 aspect-square rounded-[24px] overflow-hidden relative z-10 border border-white/10 shadow-xl flex-shrink-0 transition-all duration-500 mx-auto md:mx-0 flex items-center justify-center"
+        className="w-full max-w-[280px] min-[400px]:max-w-[320px] sm:max-w-[360px] md:max-w-none md:w-1/2 aspect-square rounded-[24px] overflow-hidden relative z-10 border border-white/10 shadow-xl flex-shrink-0 transition-all duration-500 mx-auto md:mx-0 flex items-center justify-center"
       >
         <Image
           src="/pic1.png"

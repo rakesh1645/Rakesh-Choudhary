@@ -16,7 +16,7 @@ export default function ProfileCard() {
       <Link href="/about" className="overlay-link" aria-label="Go to About page" />
 
       {/* Left side profile photo */}
-      <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-[28px] overflow-hidden border border-white/10 shrink-0 relative shadow-2xl group-hover:scale-[1.02] transition-transform duration-300 z-10">
+      <div className="w-full max-w-[280px] min-[400px]:max-w-[320px] aspect-square sm:w-56 sm:h-56 rounded-[28px] overflow-hidden border border-white/10 shrink-0 relative shadow-2xl group-hover:scale-[1.02] transition-transform duration-300 z-10">
         <Image
           src="/profile.png"
           alt="Rakesh Choudhary"
